@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+	    <style>
+#msg {
+       visibility: hidden;
+    min-width: 250px;
+    
+    background-color:yellow;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30%;
+    top: 30px;
+    font-size: 17px;
+	margin-right:50px;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+</style>
+  </head>
+  <body >
+  
+    <div class="container">
+	    <form class="box" action="">
+		<h1><b>Reset Password</b></h1>
+		   	<div class="from-group">
+			    <label for="password">Old Password:</label>
+				<input type="password" placeholder="old password">
+			</div>
+			<div class="from-group">
+			    <label for="password">New Password:</label>
+				<input type="password" placeholder="new password">
+			</div>
+			<div class="from-group">
+			    <label for="password">Confirm New Password:</label>
+				<input type="password" placeholder="confirm new password">
+			</div>
+            			
+			    <input type="button" class="btn" value="Save" onclick="myFunction()">	
+            			
+			</br>
+			</br>	
+		<a href="index.html">Go back to the Home page</a>
+		<div id="msg">Your password changed successfully!!</div>
+		<script>
+function myFunction() {
+    var x = document.getElementById("msg");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+	    </form>
+		 
+	</div>
+
+
+    
+  </body>
+</html>

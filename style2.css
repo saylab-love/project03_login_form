@@ -1,0 +1,23 @@
+.2nd{
+	text-transform:uppercase;
+	padding:5px;
+	color:#5499C7;
+}
+.box{
+	width:400px;
+	padding:30px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:#138D75;
+	text-align:center;
+	background:url(photo.jpg);
+}
+body{
+	background:url(work-5.jpg);
+	background-size:cover;
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
